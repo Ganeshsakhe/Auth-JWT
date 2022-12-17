@@ -1,0 +1,32 @@
+<div>
+    <h4>Welcome to your dashboard</h4>
+    <ul>
+        <li>username- {{user.username}}</li>
+        <li>userId- {{user.id}}</li>
+    </ul>
+    <div>
+         <button type="button" class="btn btn-primary" (click)="showTodos()">show Todos</button>
+         </div>
+         <div *ngIf="todos">
+            <h5>My Todos</h5>
+            <ul>
+                <li *ngFor="let t of todos">{{t}}</li>
+            </ul>
+         </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <h3>Welcome {{userName}} !</h3>
+<div *ngIf="todos">
+    <h5>My Todos</h5>
+    <ul >
+        <li *ngFor="let todo of todos">{{todo}}</li>
+    </ul>
+</div> -->

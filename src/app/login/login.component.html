@@ -1,0 +1,22 @@
+<div>
+    <h3>Login Form</h3>
+    <form>
+        <div class="mb-3">
+          <label for="txtusername" class="form-label">Email address</label>
+          <input type="email" class="form-control" 
+          id="txtusername" 
+          name="username"
+          aria-describedby="emailHelp"
+          [(ngModel)]= "loginData.username">
+        </div>
+        <div class="mb-3">
+          <label for="txtpassword" class="form-label">Password</label>
+          <input type="password" class="form-control"
+           id="txtpassword"
+           name="password"
+          [(ngModel)]= "loginData.password">
+        </div>
+
+        <button type="submit" (click)="userLogin()" class="btn btn-primary">Login</button>
+      </form>
+</div>
