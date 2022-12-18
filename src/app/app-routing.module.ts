@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthRouteGuard } from './shared/services/guards/auth.route.guard';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
+
 const routes: Routes = 
 [
   {path:'',redirectTo:'products',pathMatch:'full'},
