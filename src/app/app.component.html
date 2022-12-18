@@ -1,3 +1,13 @@
+<!-- <app-header></app-header> -->
+<!-- <ul>
+<li routerLink="products">Products</li>
+<li routerLink="cart">cart</li>
+</ul> -->
+<div class = "content-body">
+  <!-- <app-products></app-products> -->
+  <router-outlet></router-outlet>
+</div>
+
 <div>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -9,6 +19,13 @@
           <li class="nav-item">
             <a routerLink="/login" class="nav-link active" aria-current="page">Login</a>  
           </li>
+          <li class="nav-item">
+            <a routerLink="/products" class="nav-link active" aria-current="page">Products</a>  
+          </li>
+          <li class="nav-item">
+            <a routerLink="/cart" class="nav-link active" aria-current="page">Cart</a>  
+          </li>
+          
         </ul>
       </div>
     </div>

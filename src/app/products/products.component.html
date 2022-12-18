@@ -1,0 +1,15 @@
+
+<div class = "container">
+    <div class="row">
+    <ng-container >
+    <div class="card col-md-3" *ngFor="let item of productList">
+    <img src="{{item.image}}">
+    <h5 style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{item.title}}</h5>
+    <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{item.description}}</p>
+    <p><strong>Price:</strong>${{item.price}}</p>
+    <button class="btn btn-primary"(click)=addtoCart(item)>Addtocart(item)</button>
+        </div>
+    </ng-container>
+   </div>
+</div>
+
